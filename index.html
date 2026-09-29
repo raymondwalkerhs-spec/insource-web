@@ -7,8 +7,18 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <title>insourcE</title>
-    <script type="module" crossorigin src="/insource-web/assets/index-DjFiqq_b.js"></script>
-    <link rel="stylesheet" crossorigin href="/insource-web/assets/index-BOMjtnVz.css">
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('insource.theme');
+          document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/insource-web/assets/index-U8xK7z-V.js"></script>
+    <link rel="stylesheet" crossorigin href="/insource-web/assets/index-_-bsVHOs.css">
   </head>
   <body>
     <div id="root"></div>
