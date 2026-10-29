@@ -11,17 +11,16 @@
     <script>
       (function () {
         try {
-          var t = localStorage.getItem('insource-theme') || localStorage.getItem('insource.theme');
-          var attr = (!t || t === 'insource') ? 'dark' : t;
-          document.documentElement.setAttribute('data-theme', attr);
-          document.documentElement.setAttribute('data-insource-theme', t || 'insource');
+          var t = localStorage.getItem('insource-theme') || localStorage.getItem('insource.theme') || 'insource';
+          document.documentElement.setAttribute('data-theme', t);
+          document.documentElement.setAttribute('data-insource-theme', t);
         } catch (e) {
-          document.documentElement.setAttribute('data-theme', 'dark');
+          document.documentElement.setAttribute('data-theme', 'insource');
         }
       })();
     </script>
-    <script type="module" crossorigin src="/insource-web/assets/index-BwFHGDiJ.js"></script>
-    <link rel="stylesheet" crossorigin href="/insource-web/assets/index-DBIxptg3.css">
+    <script type="module" crossorigin src="/insource-web/assets/index-BpXcpiAF.js"></script>
+    <link rel="stylesheet" crossorigin href="/insource-web/assets/index-D8R_lmrB.css">
   </head>
   <body>
     <div id="root"></div>
