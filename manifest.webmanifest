@@ -1,7 +1,7 @@
 {
   "name": "Insource",
   "short_name": "Insource",
-  "start_url": "/attend",
+  "start_url": "./attend",
   "display": "standalone",
   "background_color": "#0B1020",
   "theme_color": "#0D9488",
